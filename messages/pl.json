@@ -1,6 +1,205 @@
 {
-  "HomePage": {
-    "title": "AutoSlot dla warsztatów",
-    "description": "Testowa strona językowa dla wersji polskiej."
+  "Header": {
+    "language": "Język",
+    "theme": "Przełącz motyw",
+    "cta": "Poproś o demo",
+    "navProblem": "Problem",
+    "navFlow": "Proces",
+    "navPricing": "Cennik",
+    "navFaq": "FAQ",
+    "navContact": "Kontakt"
+  },
+  "Footer": {
+    "title": "AutoSlot",
+    "quickLinks": "Szybkie linki",
+    "problem": "Problem",
+    "flow": "Proces",
+    "pricing": "Cennik",
+    "faq": "FAQ",
+    "contact": "Kontakt",
+    "cta": "Poproś o demo",
+    "legal": "Informacje prawne",
+    "privacy": "Prywatność",
+    "contactCue": "Pilotowe wdrożenia dla pierwszych warsztatów."
+  },
+  "Hero": {
+    "badge": "AutoSlot dla warsztatów",
+    "title": "Więcej porządku w warsztacie i łatwiejsze umawianie wizyt dla mniejszych zespołów.",
+    "description": "AutoSlot jest dla niezależnych warsztatów, które chcą mieć jeden czytelny proces od wizyty i wyceny do zlecenia i faktury.",
+    "ctaPrimary": "Poproś o demo",
+    "ctaSecondary": "Dołącz do listy oczekujących",
+    "ctaTertiary": "Przekaż feedback",
+    "visualTitle": "Realny proces warsztatu",
+    "visualDescription": "Od pierwszego kontaktu klienta do finalnej faktury, bez urwanych etapów.",
+    "flowVisit": "Wizyta / termin",
+    "flowEstimate": "Wycena",
+    "flowWorkOrder": "Zlecenie naprawy",
+    "flowInvoice": "Faktura"
+  },
+  "Problem": {
+    "title": "Jeśli prowadzisz warsztat na notatkach i wiadomościach, to brzmi znajomo.",
+    "description": "W wielu mniejszych warsztatach codziennie ginie czas, bo brakuje jasnego procesu między przyjęciem auta, akceptacją i fakturą.",
+    "painPointAppointments": "Chaotyczne terminy i wizyty w ciągu dnia.",
+    "painPointStatus": "Niejasny status napraw dla zespołu i biura.",
+    "painPointCommunication": "Notatki, telefony i wiadomości rozproszone po różnych miejscach.",
+    "painPointEstimates": "Brak czytelnego etapu wyceny przed decyzją o naprawie.",
+    "painPointAdmin": "Za dużo pracy administracyjnej zanim wystawisz fakturę."
+  },
+  "SolutionFlow": {
+    "title": "Jasny proces od wizyty klienta do faktury.",
+    "description": "AutoSlot porządkuje pracę w 4 połączonych etapach, dzięki czemu zespół zawsze wie, co jest kolejne.",
+    "visitTitle": "Wizyta / termin",
+    "visitDescription": "Zapisz przyjęcie auta i powód wizyty klienta.",
+    "estimateTitle": "Wycena",
+    "estimateDescription": "Przygotuj i zatwierdź wycenę przed rozpoczęciem naprawy.",
+    "workOrderTitle": "Zlecenie naprawy",
+    "workOrderDescription": "Zamień akceptację klienta na konkretne zadania dla warsztatu.",
+    "invoiceTitle": "Faktura",
+    "invoiceDescription": "Domknij proces fakturą i finalnym statusem zlecenia."
+  },
+  "Benefits": {
+    "title": "Praktyczne korzyści dla codziennej pracy warsztatu.",
+    "description": "AutoSlot nie dokłada zbędnych warstw. Porządkuje procesy, które i tak wykonujesz każdego dnia.",
+    "items": {
+      "lessChaos": {
+        "title": "Mniej chaosu w terminach",
+        "description": "Kalendarz i wizyty są bardziej przewidywalne dla całego zespołu."
+      },
+      "fasterFlow": {
+        "title": "Szybsze przejście od wizyty do faktury",
+        "description": "Zlecenie przechodzi przez kolejne etapy bez przeskakiwania między narzędziami."
+      },
+      "teamCommunication": {
+        "title": "Lepsza komunikacja w zespole",
+        "description": "Każda sprawa ma wspólny kontekst, bez szukania informacji w wiadomościach."
+      },
+      "repairStatus": {
+        "title": "Czytelniejszy status napraw",
+        "description": "Widzisz, na jakim etapie jest każde auto bez dodatkowych telefonów."
+      },
+      "lessAdmin": {
+        "title": "Mniej pracy administracyjnej",
+        "description": "Mniej powtarzalnych czynności zanim zamkniesz zlecenie i wystawisz fakturę."
+      },
+      "clientHandling": {
+        "title": "Prostsza obsługa klienta",
+        "description": "Łatwiej udzielić szybkiej odpowiedzi i utrzymać porządek w kontakcie."
+      }
+    }
+  },
+  "Audience": {
+    "title": "AutoSlot jest dla konkretnych warsztatów, nie dla każdego.",
+    "description": "Od początku stawiamy sprawę jasno: to narzędzie dla zespołów, które chcą uporządkować codzienną operację, a nie uniwersalna platforma enterprise.",
+    "forTitle": "Dla kogo AutoSlot",
+    "forItems": {
+      "item1": "Niezależne warsztaty małe i średnie.",
+      "item2": "Mniejsze zespoły, które potrzebują lepszej kontroli dnia.",
+      "item3": "Warsztaty, które chcą domknąć proces od wizyty do faktury.",
+      "item4": "Serwisy działające dziś na telefonach, notatkach i arkuszach.",
+      "item5": "Firmy stawiające na prosty porządek operacyjny."
+    },
+    "notForTitle": "Na ten moment raczej nie dla",
+    "notForItems": {
+      "item1": "Bardzo dużych sieci z ciężkim workflow enterprise.",
+      "item2": "Organizacji wymagających pełnego ERP klasy korporacyjnej.",
+      "item3": "Firm z mocno niestandardowym procesem korporacyjnym.",
+      "item4": "Zespołów oczekujących od razu złożonej platformy wielooddziałowej i wielokrajowej."
+    }
+  },
+  "ProductPreview": {
+    "title": "Tak może wyglądać codzienna praca w jednym, czytelnym panelu.",
+    "description": "Zwarty podgląd wizyt, wyceny, zlecenia i dokumentu końcowego, bez udawania pełnego dashboardu.",
+    "panelTitle": "Podgląd aktywnego zlecenia",
+    "panelStatus": "W trakcie",
+    "panelMeta": "WO-1842",
+    "calendarTitle": "Kalendarz / wizyty",
+    "calendarLine1": "09:30 - Skoda Octavia - wymiana hamulców",
+    "calendarLine2": "11:00 - Opel Astra - przegląd i wycena",
+    "estimateTitle": "Wycena",
+    "estimateLine1": "Pozycje części i robocizny gotowe do akceptacji",
+    "estimateLine2": "Status: oczekuje na potwierdzenie",
+    "workOrderTitle": "Zlecenie naprawy",
+    "workOrderLine1": "Praca przypisana do stanowiska 2, priorytet średni",
+    "workOrderLine2": "Checklista techniczna uzupełniona",
+    "invoiceTitle": "Dokument / faktura",
+    "invoiceLine1": "Szkic gotowy do wystawienia po zamknięciu pracy",
+    "invoiceLine2": "Dane klienta i pojazdu uzupełnione"
+  },
+  "Pricing": {
+    "title": "Prosty model early access z pierwszymi warsztatami.",
+    "description": "Nie publikujemy cennika enterprise. Early access startuje od 200 PLN dla warsztatów do 5 stanowisk, a szerszy zakres ustalamy podczas demo.",
+    "badge": "Early access",
+    "cardTitle": "Pakiet pilotowy AutoSlot",
+    "cardDescription": "Wdrożenie prowadzone razem z warsztatem, bez przerostu funkcji na starcie.",
+    "pricingModel": "Od 200 PLN",
+    "pricingDetails": "Bazowy zakres obejmuje do 5 stanowisk. Przy większej skali doprecyzowujemy pilot i cenę po rozmowie demo.",
+    "includedTitle": "Co obejmuje start",
+    "includedItems": {
+      "item1": "Kalendarz wizyt i codzienne zarządzanie przyjęciami.",
+      "item2": "Wyceny oraz przejście do zleceń naprawy.",
+      "item3": "Dokumenty zamknięcia i obsługa fakturowa.",
+      "item4": "Onboarding i wsparcie na początku wdrożenia.",
+      "item5": "Pętla feedbacku do wspólnego dopracowania produktu."
+    },
+    "ctaPrimary": "Poproś o demo",
+    "ctaSecondary": "Dołącz do listy oczekujących",
+    "noteTitle": "Model cenowy budowany z realnymi warsztatami",
+    "noteDescription": "Zakres i model cenowy dopracowujemy na realnych wdrożeniach pilotowych, a nie na sztucznych pakietach."
+  },
+  "Feedback": {
+    "title": "Szukamy pierwszych warsztatów, z którymi rozwiniemy AutoSlot.",
+    "description": "Jeśli chcesz zobaczyć demo, dołączyć do listy oczekujących albo przekazać potrzeby zespołu, to dobry moment na rozmowę.",
+    "badge": "Pierwsze warsztaty",
+    "formTitle": "Opisz krótko swój warsztat",
+    "workshopNameLabel": "Nazwa warsztatu",
+    "workshopNamePlaceholder": "np. Auto Serwis Poldrive",
+    "contactNameLabel": "Osoba kontaktowa",
+    "contactNamePlaceholder": "np. Jan Kowalski",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "kontakt@warsztat.pl",
+    "marketLabel": "Kraj / język",
+    "marketPlaceholder": "np. Polska / polski",
+    "interestTypeLabel": "Typ zainteresowania",
+    "interestTypeDemo": "Poproś o demo",
+    "interestTypeWaitlist": "Dołącz do listy oczekujących",
+    "interestTypeFeedback": "Przekaż feedback",
+    "messageLabel": "Wiadomość (opcjonalnie)",
+    "messagePlaceholder": "Co najbardziej chcesz uporządkować w codziennym procesie warsztatu?",
+    "submitCta": "Wyślij zgłoszenie",
+    "helperNote": "Na tym etapie to front-only: kliknięcie otworzy aplikację e-mail z uzupełnionym szkicem."
+  },
+  "FAQ": {
+    "title": "Najczęstsze pytania przed rozpoczęciem.",
+    "description": "Krótkie i konkretne odpowiedzi, żeby łatwiej ocenić, czy AutoSlot pasuje do Twojego warsztatu.",
+    "items": {
+      "item1": {
+        "question": "Dla kogo jest AutoSlot?",
+        "answer": "Głównie dla niezależnych warsztatów małych i średnich, które chcą lepiej uporządkować codzienną pracę."
+      },
+      "item2": {
+        "question": "Czy klienci mogą rezerwować online?",
+        "answer": "Tak. Rezerwacje online są w roadmapie produktu, a w pilocie dopasowujemy praktyczny model do realiów warsztatu."
+      },
+      "item3": {
+        "question": "Czy można zrobić wycenę przed naprawą?",
+        "answer": "Tak. Etap wyceny przed rozpoczęciem naprawy jest jednym z podstawowych elementów procesu."
+      },
+      "item4": {
+        "question": "Jak wygląda kierunek fakturowania i zgodności podatkowej?",
+        "answer": "AutoSlot wspiera proces od zlecenia do dokumentu końcowego. Szczegóły zgodności podatkowej doprecyzowujemy per rynek przy wdrożeniu."
+      },
+      "item5": {
+        "question": "Jakie są podstawy cenowe?",
+        "answer": "Startujemy od 200 PLN dla warsztatów do 5 stanowisk, a szerszy zakres ustalamy podczas demo pilota."
+      },
+      "item6": {
+        "question": "Czy AutoSlot obsługuje języki es/pl/en?",
+        "answer": "Tak. Na tym etapie wspieramy hiszpański, polski i angielski."
+      },
+      "item7": {
+        "question": "Czy to już finalny produkt czy nadal early access?",
+        "answer": "To nadal etap early access z pierwszymi warsztatami. Feedback z pilota realnie wpływa na roadmapę."
+      }
+    }
   }
 }

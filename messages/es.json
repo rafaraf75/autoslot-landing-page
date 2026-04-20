@@ -1,6 +1,205 @@
 {
-  "HomePage": {
-    "title": "AutoSlot para talleres",
-    "description": "Página de prueba de idioma para la versión en español."
+  "Header": {
+    "language": "Idioma",
+    "theme": "Cambiar tema",
+    "cta": "Solicitar demo",
+    "navProblem": "Problema",
+    "navFlow": "Flujo",
+    "navPricing": "Precios",
+    "navFaq": "FAQ",
+    "navContact": "Contacto"
+  },
+  "Footer": {
+    "title": "AutoSlot",
+    "quickLinks": "Enlaces rápidos",
+    "problem": "Problema",
+    "flow": "Flujo",
+    "pricing": "Precios",
+    "faq": "FAQ",
+    "contact": "Contacto",
+    "cta": "Solicitar demo",
+    "legal": "Legal",
+    "privacy": "Privacidad",
+    "contactCue": "Onboarding piloto con primeros talleres."
+  },
+  "Hero": {
+    "badge": "AutoSlot para talleres",
+    "title": "Más orden en el taller y reservas más fáciles para equipos de servicio pequeños.",
+    "description": "AutoSlot está pensado para talleres independientes que quieren un flujo claro desde la visita y presupuesto hasta la orden y la factura.",
+    "ctaPrimary": "Solicitar demo",
+    "ctaSecondary": "Unirse a lista de espera",
+    "ctaTertiary": "Compartir feedback",
+    "visualTitle": "Flujo real del taller",
+    "visualDescription": "Del primer contacto del cliente hasta la factura final, sin pasos sueltos.",
+    "flowVisit": "Visita / cita",
+    "flowEstimate": "Presupuesto",
+    "flowWorkOrder": "Orden de reparación",
+    "flowInvoice": "Factura"
+  },
+  "Problem": {
+    "title": "Si hoy llevas el taller con notas sueltas, esto te sonará familiar.",
+    "description": "Muchos talleres pequeños pierden tiempo cada día por falta de un proceso claro entre recepción, aprobación y facturación.",
+    "painPointAppointments": "Citas y visitas desordenadas durante el día.",
+    "painPointStatus": "Estado de las reparaciones poco claro para el equipo.",
+    "painPointCommunication": "Notas, mensajes y llamadas repartidos en varios canales.",
+    "painPointEstimates": "Presupuestos sin un paso claro antes de aprobar la reparación.",
+    "painPointAdmin": "Demasiada carga administrativa antes de facturar."
+  },
+  "SolutionFlow": {
+    "title": "Un flujo claro desde la visita hasta la factura.",
+    "description": "AutoSlot organiza el trabajo en 4 pasos conectados, para que el equipo sepa qué sigue en cada orden.",
+    "visitTitle": "Visita / cita",
+    "visitDescription": "Registra la entrada del cliente y el motivo de la reparación.",
+    "estimateTitle": "Presupuesto",
+    "estimateDescription": "Prepara y valida el presupuesto antes de empezar el trabajo.",
+    "workOrderTitle": "Orden de reparación",
+    "workOrderDescription": "Convierte la aprobación en tareas claras para el taller.",
+    "invoiceTitle": "Factura",
+    "invoiceDescription": "Cierra el proceso con facturación y estado final."
+  },
+  "Benefits": {
+    "title": "Beneficios reales para el trabajo diario del taller.",
+    "description": "AutoSlot no añade ruido: ordena procesos que ya haces cada día, con menos fricción entre recepción, mecánicos y cliente.",
+    "items": {
+      "lessChaos": {
+        "title": "Menos caos en los horarios",
+        "description": "La agenda y las visitas quedan más claras para todo el equipo."
+      },
+      "fasterFlow": {
+        "title": "Del ingreso a la factura más rápido",
+        "description": "El proceso completo avanza sin saltos entre herramientas."
+      },
+      "teamCommunication": {
+        "title": "Mejor comunicación interna",
+        "description": "Cada orden tiene contexto compartido, sin perseguir mensajes."
+      },
+      "repairStatus": {
+        "title": "Estado de reparaciones más visible",
+        "description": "Sabes en qué punto está cada trabajo sin revisar notas sueltas."
+      },
+      "lessAdmin": {
+        "title": "Menos carga administrativa",
+        "description": "Menos tiempo en tareas repetitivas antes de cerrar una orden."
+      },
+      "clientHandling": {
+        "title": "Atención al cliente más simple",
+        "description": "Puedes responder con más rapidez y menos fricción operativa."
+      }
+    }
+  },
+  "Audience": {
+    "title": "AutoSlot está hecho para talleres concretos, no para todos.",
+    "description": "Queremos ser claros desde el inicio: es una herramienta para equipos que quieren ordenar la operativa diaria, no una plataforma enterprise universal.",
+    "forTitle": "Para quién es AutoSlot",
+    "forItems": {
+      "item1": "Talleres independientes de tamaño pequeño o medio.",
+      "item2": "Equipos reducidos que necesitan visibilidad diaria del trabajo.",
+      "item3": "Talleres que quieren ordenar el flujo de visita a factura.",
+      "item4": "Servicios que hoy operan con llamadas, notas y hojas de cálculo.",
+      "item5": "Negocios que priorizan claridad operativa sobre complejidad técnica."
+    },
+    "notForTitle": "Por ahora, probablemente no para",
+    "notForItems": {
+      "item1": "Grandes redes con procesos enterprise muy pesados.",
+      "item2": "Empresas que necesitan un ERP completo de alcance corporativo.",
+      "item3": "Organizaciones con flujos internos altamente personalizados.",
+      "item4": "Equipos que requieren una plataforma multipaís con reglas complejas desde el día uno."
+    }
+  },
+  "ProductPreview": {
+    "title": "Así puede verse tu operativa en un panel simple y claro.",
+    "description": "Una vista compacta para seguir visitas, presupuesto, orden y documento final, sin pretender un dashboard completo.",
+    "panelTitle": "Panel de orden activa",
+    "panelStatus": "En progreso",
+    "panelMeta": "WO-1842",
+    "calendarTitle": "Calendario / visitas",
+    "calendarLine1": "09:30 - Seat Leon - cambio de frenos",
+    "calendarLine2": "11:00 - Citroen C4 - revisión y presupuesto",
+    "estimateTitle": "Presupuesto",
+    "estimateLine1": "Piezas y mano de obra listadas para aprobación",
+    "estimateLine2": "Estado: pendiente de confirmación",
+    "workOrderTitle": "Orden de reparación",
+    "workOrderLine1": "Trabajo asignado al box 2 con prioridad media",
+    "workOrderLine2": "Checklist técnico actualizado",
+    "invoiceTitle": "Documento / factura",
+    "invoiceLine1": "Borrador listo para emitir tras cierre del trabajo",
+    "invoiceLine2": "Datos de cliente y vehículo completados"
+  },
+  "Pricing": {
+    "title": "Modelo simple para early access con los primeros talleres.",
+    "description": "No mostramos una tabla enterprise. El early access empieza desde 49 EUR para talleres de hasta 5 puestos / elevadores y ajustamos el alcance en la demo.",
+    "badge": "Early access",
+    "cardTitle": "Plan piloto AutoSlot",
+    "cardDescription": "Implementación acompañada para talleres que quieren ordenar operativa sin sobrecarga.",
+    "pricingModel": "Desde 49 EUR",
+    "pricingDetails": "Alcance base: hasta 5 puestos / elevadores. Si el taller necesita más, definimos alcance y precio del piloto en la demo.",
+    "includedTitle": "Incluye en el arranque",
+    "includedItems": {
+      "item1": "Calendario de visitas y gestión diaria de entradas.",
+      "item2": "Presupuestos y conversión a orden de reparación.",
+      "item3": "Documentos de cierre y facturación operativa.",
+      "item4": "Onboarding inicial con acompañamiento.",
+      "item5": "Canal de feedback para ajustar el producto con tu equipo."
+    },
+    "ctaPrimary": "Solicitar demo",
+    "ctaSecondary": "Unirse a lista de espera",
+    "noteTitle": "Modelo de precio construido con talleres reales",
+    "noteDescription": "La propuesta se ajusta según implementaciones piloto reales, no con planes cerrados de catálogo."
+  },
+  "Feedback": {
+    "title": "Buscamos los primeros talleres para construir AutoSlot juntos.",
+    "description": "Si quieres ver el flujo en vivo, entrar en la lista de espera o compartir tu caso, este es un buen momento para hablar.",
+    "badge": "Primeros talleres",
+    "formTitle": "Cuéntanos tu contexto de taller",
+    "workshopNameLabel": "Nombre del taller",
+    "workshopNamePlaceholder": "p. ej. Taller Norte",
+    "contactNameLabel": "Persona de contacto",
+    "contactNamePlaceholder": "p. ej. Carlos Ruiz",
+    "emailLabel": "Correo",
+    "emailPlaceholder": "equipo@taller.com",
+    "marketLabel": "País / idioma",
+    "marketPlaceholder": "p. ej. España / español",
+    "interestTypeLabel": "Tipo de interés",
+    "interestTypeDemo": "Solicitar demo",
+    "interestTypeWaitlist": "Unirse a lista de espera",
+    "interestTypeFeedback": "Compartir feedback",
+    "messageLabel": "Mensaje (opcional)",
+    "messagePlaceholder": "¿Qué parte del flujo del taller quieres ordenar primero?",
+    "submitCta": "Enviar solicitud",
+    "helperNote": "Por ahora es front-only: al enviar se abre tu app de correo con un borrador."
+  },
+  "FAQ": {
+    "title": "Preguntas frecuentes antes de empezar.",
+    "description": "Respuestas cortas y directas para decidir si AutoSlot encaja con tu taller en esta etapa.",
+    "items": {
+      "item1": {
+        "question": "¿Para quién está hecho AutoSlot?",
+        "answer": "Principalmente para talleres independientes pequeños y medianos que quieren más orden operativo diario."
+      },
+      "item2": {
+        "question": "¿Los clientes pueden reservar online?",
+        "answer": "Sí. La reserva online forma parte del roadmap del producto. En piloto ajustamos el enfoque a cada taller."
+      },
+      "item3": {
+        "question": "¿Se puede preparar presupuesto antes de la reparación?",
+        "answer": "Sí. El presupuesto antes de iniciar reparación es un paso central del flujo."
+      },
+      "item4": {
+        "question": "¿Cómo va la parte de facturación y cumplimiento fiscal?",
+        "answer": "AutoSlot cubre el flujo hasta documento final. Los detalles de cumplimiento fiscal se afinan por mercado durante onboarding."
+      },
+      "item5": {
+        "question": "¿Cuáles son las bases de precio?",
+        "answer": "El punto de entrada actual es desde 49 EUR para hasta 5 puestos / elevadores, con alcance de piloto definido en demo."
+      },
+      "item6": {
+        "question": "¿AutoSlot soporta idiomas es/pl/en?",
+        "answer": "Sí. En esta etapa trabajamos con español, polaco e inglés."
+      },
+      "item7": {
+        "question": "¿Es producto final o fase de early access?",
+        "answer": "Estamos en early access con primeros talleres. El feedback del piloto define prioridades reales."
+      }
+    }
   }
 }

@@ -1,6 +1,205 @@
 {
-  "HomePage": {
-    "title": "AutoSlot for workshops",
-    "description": "Test locale page for the English version."
+  "Header": {
+    "language": "Language",
+    "theme": "Toggle theme",
+    "cta": "Request demo",
+    "navProblem": "Problem",
+    "navFlow": "Flow",
+    "navPricing": "Pricing",
+    "navFaq": "FAQ",
+    "navContact": "Contact"
+  },
+  "Footer": {
+    "title": "AutoSlot",
+    "quickLinks": "Quick links",
+    "problem": "Problem",
+    "flow": "Flow",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "cta": "Request demo",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "contactCue": "Pilot onboarding with first partner garages."
+  },
+  "Hero": {
+    "badge": "AutoSlot for workshops",
+    "title": "More order in the workshop and easier booking for small service teams.",
+    "description": "AutoSlot is built for independent workshops that want one clear flow from visit and estimate to repair order and invoice.",
+    "ctaPrimary": "Request demo",
+    "ctaSecondary": "Join waitlist",
+    "ctaTertiary": "Share feedback",
+    "visualTitle": "Real workshop flow",
+    "visualDescription": "From the first customer touchpoint to the final invoice, without disconnected steps.",
+    "flowVisit": "Visit / appointment",
+    "flowEstimate": "Estimate",
+    "flowWorkOrder": "Repair order",
+    "flowInvoice": "Invoice"
+  },
+  "Problem": {
+    "title": "If your workshop still runs on scattered notes and calls, this will feel familiar.",
+    "description": "Small garages lose time every day when there is no clear process between intake, approval and invoicing.",
+    "painPointAppointments": "Chaotic appointments and walk-ins throughout the day.",
+    "painPointStatus": "Unclear repair status across the team.",
+    "painPointCommunication": "Notes, calls and messages spread across different channels.",
+    "painPointEstimates": "No clear estimate step before repair approval.",
+    "painPointAdmin": "Too much admin overhead before invoicing."
+  },
+  "SolutionFlow": {
+    "title": "A clear flow from visit to final invoice.",
+    "description": "AutoSlot structures daily operations in 4 connected steps, so the team always knows what comes next.",
+    "visitTitle": "Visit / appointment",
+    "visitDescription": "Capture customer intake and repair context at the first touchpoint.",
+    "estimateTitle": "Estimate",
+    "estimateDescription": "Prepare and confirm the estimate before starting repair work.",
+    "workOrderTitle": "Repair order",
+    "workOrderDescription": "Turn approval into clear execution tasks for the workshop team.",
+    "invoiceTitle": "Invoice",
+    "invoiceDescription": "Close the process with invoicing and final job status."
+  },
+  "Benefits": {
+    "title": "Practical benefits for everyday workshop operations.",
+    "description": "AutoSlot keeps things simple: it organizes the process your team already runs with less friction between front desk, technicians and customers.",
+    "items": {
+      "lessChaos": {
+        "title": "Less schedule chaos",
+        "description": "Appointments and walk-ins become easier to manage across the day."
+      },
+      "fasterFlow": {
+        "title": "Faster path from visit to invoice",
+        "description": "Jobs move through each stage without jumping between disconnected tools."
+      },
+      "teamCommunication": {
+        "title": "Better team communication",
+        "description": "Each order keeps shared context, so less time is spent chasing updates."
+      },
+      "repairStatus": {
+        "title": "Clearer repair status",
+        "description": "Everyone can see progress at a glance, without extra back-and-forth."
+      },
+      "lessAdmin": {
+        "title": "Less admin overhead",
+        "description": "Reduce repetitive paperwork before finalizing and invoicing work."
+      },
+      "clientHandling": {
+        "title": "Simpler customer handling",
+        "description": "Respond faster and keep customer communication more consistent."
+      }
+    }
+  },
+  "Audience": {
+    "title": "AutoSlot is built for specific workshops, not for everyone.",
+    "description": "We want to be clear from the start: this is for teams that need cleaner day-to-day operations, not a one-size-fits-all enterprise suite.",
+    "forTitle": "Who AutoSlot is for",
+    "forItems": {
+      "item1": "Independent small and mid-sized garages.",
+      "item2": "Smaller teams that need better daily workflow visibility.",
+      "item3": "Workshops aiming to structure the process from visit to invoice.",
+      "item4": "Service shops currently running on calls, notes and spreadsheets.",
+      "item5": "Businesses that value practical operational clarity over complexity."
+    },
+    "notForTitle": "At this stage, likely not for",
+    "notForItems": {
+      "item1": "Very large networks with heavy enterprise workflows.",
+      "item2": "Companies requiring a full corporate ERP stack.",
+      "item3": "Organizations with deeply customized corporate processes.",
+      "item4": "Teams expecting complex multi-branch and multi-country logic from day one."
+    }
+  },
+  "ProductPreview": {
+    "title": "This is how daily workflow can look in one clear product view.",
+    "description": "A compact panel showing visits, estimate, repair order and final document, without pretending to be a full dashboard.",
+    "panelTitle": "Active order preview",
+    "panelStatus": "In progress",
+    "panelMeta": "WO-1842",
+    "calendarTitle": "Calendar / visits",
+    "calendarLine1": "09:30 - VW Golf - brake replacement",
+    "calendarLine2": "11:00 - Ford Focus - inspection and estimate",
+    "estimateTitle": "Estimate",
+    "estimateLine1": "Parts and labor lines prepared for approval",
+    "estimateLine2": "Status: waiting for confirmation",
+    "workOrderTitle": "Repair order",
+    "workOrderLine1": "Job assigned to bay 2 with medium priority",
+    "workOrderLine2": "Technical checklist updated",
+    "invoiceTitle": "Document / invoice",
+    "invoiceLine1": "Draft ready to issue after job completion",
+    "invoiceLine2": "Customer and vehicle details completed"
+  },
+  "Pricing": {
+    "title": "Simple early-access pricing for first partner garages.",
+    "description": "This is not an enterprise price table. Early-access rollout starts from 49 EUR for up to 5 bays / workstations, then scope is confirmed during demo.",
+    "badge": "Early access",
+    "cardTitle": "AutoSlot pilot package",
+    "cardDescription": "Guided rollout for workshops that want operational order without unnecessary complexity.",
+    "pricingModel": "From 49 EUR",
+    "pricingDetails": "Base scope: up to 5 bays / workstations. If your setup is larger, we define the pilot scope and price during demo.",
+    "includedTitle": "What is included",
+    "includedItems": {
+      "item1": "Workshop calendar and daily visit management.",
+      "item2": "Estimates and transition into repair orders.",
+      "item3": "Closing documents and invoicing workflow.",
+      "item4": "Initial onboarding with guided setup.",
+      "item5": "Feedback loop to shape the product with your team."
+    },
+    "ctaPrimary": "Request demo",
+    "ctaSecondary": "Join waitlist",
+    "noteTitle": "Pricing built with early garages",
+    "noteDescription": "The offer is shaped with real pilot implementations, not fixed multi-tier catalog plans."
+  },
+  "Feedback": {
+    "title": "We are looking for first partner garages to build AutoSlot with us.",
+    "description": "Request a demo, join the waitlist, or share your workshop needs so we can evaluate fit before rollout.",
+    "badge": "First garages",
+    "formTitle": "Share your workshop context",
+    "workshopNameLabel": "Workshop name",
+    "workshopNamePlaceholder": "e.g. North Garage",
+    "contactNameLabel": "Contact name",
+    "contactNamePlaceholder": "e.g. Alex Novak",
+    "emailLabel": "Email",
+    "emailPlaceholder": "you@workshop.com",
+    "marketLabel": "Country / language",
+    "marketPlaceholder": "e.g. Spain / Spanish",
+    "interestTypeLabel": "Interest type",
+    "interestTypeDemo": "Request demo",
+    "interestTypeWaitlist": "Join waitlist",
+    "interestTypeFeedback": "Share feedback",
+    "messageLabel": "Message (optional)",
+    "messagePlaceholder": "What do you want to improve first in your workshop flow?",
+    "submitCta": "Send request",
+    "helperNote": "Front-only for now: submit opens your email app with a prefilled draft."
+  },
+  "FAQ": {
+    "title": "Frequently asked questions before contact.",
+    "description": "Short and practical answers to help workshop owners decide whether AutoSlot fits this stage.",
+    "items": {
+      "item1": {
+        "question": "Who is AutoSlot built for?",
+        "answer": "Mainly independent small and mid-sized workshops that want a clearer day-to-day workflow."
+      },
+      "item2": {
+        "question": "Can customers book online?",
+        "answer": "Yes. Online booking is part of the roadmap, and in pilot we validate the setup with each workshop."
+      },
+      "item3": {
+        "question": "Can I prepare an estimate before repair starts?",
+        "answer": "Yes. Estimate before repair is a core step in the workflow."
+      },
+      "item4": {
+        "question": "What about invoicing and tax-compliance direction?",
+        "answer": "AutoSlot supports the invoicing workflow. Tax-compliance details are refined per market during onboarding."
+      },
+      "item5": {
+        "question": "What are the pricing basics?",
+        "answer": "Current entry point is from 49 EUR for up to 5 bays / workstations, with pilot scope aligned during demo."
+      },
+      "item6": {
+        "question": "Does AutoSlot support multiple languages?",
+        "answer": "Yes. Current landing and pilot communication support Spanish, Polish and English."
+      },
+      "item7": {
+        "question": "Is this final product stage or early access?",
+        "answer": "It is early access with first partner garages. Feedback from pilot rollouts shapes priorities."
+      }
+    }
   }
 }
