@@ -107,23 +107,14 @@
     }
   },
   "ProductPreview": {
-    "title": "Tak może wyglądać codzienna praca w jednym, czytelnym panelu.",
-    "description": "Zwarty podgląd wizyt, wyceny, zlecenia i dokumentu końcowego, bez udawania pełnego dashboardu.",
-    "panelTitle": "Podgląd aktywnego zlecenia",
-    "panelStatus": "W trakcie",
-    "panelMeta": "WO-1842",
-    "calendarTitle": "Kalendarz / wizyty",
-    "calendarLine1": "09:30 - Skoda Octavia - wymiana hamulców",
-    "calendarLine2": "11:00 - Opel Astra - przegląd i wycena",
-    "estimateTitle": "Wycena",
-    "estimateLine1": "Pozycje części i robocizny gotowe do akceptacji",
-    "estimateLine2": "Status: oczekuje na potwierdzenie",
-    "workOrderTitle": "Zlecenie naprawy",
-    "workOrderLine1": "Praca przypisana do stanowiska 2, priorytet średni",
-    "workOrderLine2": "Checklista techniczna uzupełniona",
-    "invoiceTitle": "Dokument / faktura",
-    "invoiceLine1": "Szkic gotowy do wystawienia po zamknięciu pracy",
-    "invoiceLine2": "Dane klienta i pojazdu uzupełnione"
+    "title": "Klient może umówić wizytę online.",
+    "description": "AutoSlot może udostępnić prosty widok rezerwacji, dzięki któremu klient wybiera usługę, termin i dane bez wymiany wiadomości.",
+    "imageAlt": "Widok rezerwacji online AutoSlot dla klienta warsztatu",
+    "points": {
+      "booking": "Mniej telefonów przy umawianiu wizyt.",
+      "time": "Jasny wybór terminu i godziny.",
+      "data": "Dane klienta trafiają od razu do procesu."
+    }
   },
   "Pricing": {
     "title": "Prosty model early access z pierwszymi warsztatami.",
@@ -166,7 +157,10 @@
     "messageLabel": "Wiadomość (opcjonalnie)",
     "messagePlaceholder": "Co najbardziej chcesz uporządkować w codziennym procesie warsztatu?",
     "submitCta": "Wyślij zgłoszenie",
-    "helperNote": "Na tym etapie to front-only: kliknięcie otworzy aplikację e-mail z uzupełnionym szkicem."
+    "helperNote": "Na tym etapie to front-only: kliknięcie otworzy aplikację e-mail z uzupełnionym szkicem.",
+    "interestTypeDemoDescription": "Zobacz, jak AutoSlot może uporządkować wizyty, wycenę i zlecenia w Twoim warsztacie.",
+    "interestTypeWaitlistDescription": "Daj znać, że chcesz wejść do kolejnej fali wdrożeń, gdy otworzymy następne miejsca.",
+    "interestTypeFeedbackDescription": "Opisz potrzeby zespołu i to, co najbardziej warto dopracować przed wdrożeniem."
   },
   "FAQ": {
     "title": "Najczęstsze pytania przed rozpoczęciem.",

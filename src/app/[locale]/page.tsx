@@ -49,13 +49,13 @@ export default async function LocaleHomePage({ params }: LocalePageProps) {
     <div className="landing-page-shell relative isolate">
       <div
         aria-hidden="true"
-        className="landing-page-bg pointer-events-none absolute inset-x-0 top-0 h-[960px] md:h-[1120px]"
+        className="landing-page-bg pointer-events-none absolute inset-x-0 top-0 h-[820px] md:h-[980px]"
       />
       <div
         aria-hidden="true"
-        className="landing-page-fade pointer-events-none absolute inset-x-0 top-0 h-[1180px] md:h-[1360px]"
+        className="landing-page-fade pointer-events-none absolute inset-x-0 top-0 h-[900px] md:h-[1060px]"
       />
-      <div className="autoslot-container relative z-10 py-6 md:py-10">
+      <div className="autoslot-container relative z-10 pt-6 md:pt-10">
         <Script
           id="faq-json-ld"
           type="application/ld+json"
@@ -148,21 +148,12 @@ export default async function LocaleHomePage({ params }: LocalePageProps) {
         <ProductPreviewSection
           title={tPreview("title")}
           description={tPreview("description")}
-          panelTitle={tPreview("panelTitle")}
-          panelStatus={tPreview("panelStatus")}
-          panelMeta={tPreview("panelMeta")}
-          calendarTitle={tPreview("calendarTitle")}
-          calendarLine1={tPreview("calendarLine1")}
-          calendarLine2={tPreview("calendarLine2")}
-          estimateTitle={tPreview("estimateTitle")}
-          estimateLine1={tPreview("estimateLine1")}
-          estimateLine2={tPreview("estimateLine2")}
-          workOrderTitle={tPreview("workOrderTitle")}
-          workOrderLine1={tPreview("workOrderLine1")}
-          workOrderLine2={tPreview("workOrderLine2")}
-          invoiceTitle={tPreview("invoiceTitle")}
-          invoiceLine1={tPreview("invoiceLine1")}
-          invoiceLine2={tPreview("invoiceLine2")}
+          imageAlt={tPreview("imageAlt")}
+          points={[
+            tPreview("points.booking"),
+            tPreview("points.time"),
+            tPreview("points.data"),
+          ]}
         />
         <PricingSection
           title={tPricing("title")}
@@ -202,6 +193,9 @@ export default async function LocaleHomePage({ params }: LocalePageProps) {
           interestTypeDemo={tFeedback("interestTypeDemo")}
           interestTypeWaitlist={tFeedback("interestTypeWaitlist")}
           interestTypeFeedback={tFeedback("interestTypeFeedback")}
+          interestTypeDemoDescription={tFeedback("interestTypeDemoDescription")}
+          interestTypeWaitlistDescription={tFeedback("interestTypeWaitlistDescription")}
+          interestTypeFeedbackDescription={tFeedback("interestTypeFeedbackDescription")}
           messageLabel={tFeedback("messageLabel")}
           messagePlaceholder={tFeedback("messagePlaceholder")}
           submitCta={tFeedback("submitCta")}

@@ -107,23 +107,14 @@
     }
   },
   "ProductPreview": {
-    "title": "This is how daily workflow can look in one clear product view.",
-    "description": "A compact panel showing visits, estimate, repair order and final document, without pretending to be a full dashboard.",
-    "panelTitle": "Active order preview",
-    "panelStatus": "In progress",
-    "panelMeta": "WO-1842",
-    "calendarTitle": "Calendar / visits",
-    "calendarLine1": "09:30 - VW Golf - brake replacement",
-    "calendarLine2": "11:00 - Ford Focus - inspection and estimate",
-    "estimateTitle": "Estimate",
-    "estimateLine1": "Parts and labor lines prepared for approval",
-    "estimateLine2": "Status: waiting for confirmation",
-    "workOrderTitle": "Repair order",
-    "workOrderLine1": "Job assigned to bay 2 with medium priority",
-    "workOrderLine2": "Technical checklist updated",
-    "invoiceTitle": "Document / invoice",
-    "invoiceLine1": "Draft ready to issue after job completion",
-    "invoiceLine2": "Customer and vehicle details completed"
+    "title": "Customers can book an appointment online.",
+    "description": "AutoSlot can provide a simple booking view where the customer selects the service, time slot and details without back-and-forth messages.",
+    "imageAlt": "AutoSlot online booking view for a workshop customer",
+    "points": {
+      "booking": "Fewer calls when booking appointments.",
+      "time": "Clear date and time selection.",
+      "data": "Customer details go straight into the workflow."
+    }
   },
   "Pricing": {
     "title": "Simple early-access pricing for first partner garages.",
@@ -166,7 +157,10 @@
     "messageLabel": "Message (optional)",
     "messagePlaceholder": "What do you want to improve first in your workshop flow?",
     "submitCta": "Send request",
-    "helperNote": "Front-only for now: submit opens your email app with a prefilled draft."
+    "helperNote": "Front-only for now: submit opens your email app with a prefilled draft.",
+    "interestTypeDemoDescription": "See how AutoSlot can structure visits, estimates and repair orders in your workshop.",
+    "interestTypeWaitlistDescription": "Let us know you want to join the next wave of onboardings when more spots open up.",
+    "interestTypeFeedbackDescription": "Share your team needs and what should be refined before rollout."
   },
   "FAQ": {
     "title": "Frequently asked questions before contact.",

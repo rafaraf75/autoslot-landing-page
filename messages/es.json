@@ -107,23 +107,14 @@
     }
   },
   "ProductPreview": {
-    "title": "Así puede verse tu operativa en un panel simple y claro.",
-    "description": "Una vista compacta para seguir visitas, presupuesto, orden y documento final, sin pretender un dashboard completo.",
-    "panelTitle": "Panel de orden activa",
-    "panelStatus": "En progreso",
-    "panelMeta": "WO-1842",
-    "calendarTitle": "Calendario / visitas",
-    "calendarLine1": "09:30 - Seat Leon - cambio de frenos",
-    "calendarLine2": "11:00 - Citroen C4 - revisión y presupuesto",
-    "estimateTitle": "Presupuesto",
-    "estimateLine1": "Piezas y mano de obra listadas para aprobación",
-    "estimateLine2": "Estado: pendiente de confirmación",
-    "workOrderTitle": "Orden de reparación",
-    "workOrderLine1": "Trabajo asignado al box 2 con prioridad media",
-    "workOrderLine2": "Checklist técnico actualizado",
-    "invoiceTitle": "Documento / factura",
-    "invoiceLine1": "Borrador listo para emitir tras cierre del trabajo",
-    "invoiceLine2": "Datos de cliente y vehículo completados"
+    "title": "El cliente puede reservar una cita online.",
+    "description": "AutoSlot puede ofrecer una vista simple de reserva para que el cliente elija servicio, fecha y datos sin intercambio de mensajes.",
+    "imageAlt": "Vista de reserva online de AutoSlot para un cliente del taller",
+    "points": {
+      "booking": "Menos llamadas para agendar citas.",
+      "time": "Selección clara de fecha y hora.",
+      "data": "Los datos del cliente entran directamente en el flujo."
+    }
   },
   "Pricing": {
     "title": "Modelo simple para early access con los primeros talleres.",
@@ -166,7 +157,10 @@
     "messageLabel": "Mensaje (opcional)",
     "messagePlaceholder": "¿Qué parte del flujo del taller quieres ordenar primero?",
     "submitCta": "Enviar solicitud",
-    "helperNote": "Por ahora es front-only: al enviar se abre tu app de correo con un borrador."
+    "helperNote": "Por ahora es front-only: al enviar se abre tu app de correo con un borrador.",
+    "interestTypeDemoDescription": "Mira cómo AutoSlot puede ordenar citas, presupuestos y órdenes en tu taller.",
+    "interestTypeWaitlistDescription": "Déjanos saber que quieres entrar en la siguiente ola de implantaciones cuando abramos más plazas.",
+    "interestTypeFeedbackDescription": "Comparte las necesidades de tu equipo y qué conviene afinar antes del despliegue."
   },
   "FAQ": {
     "title": "Preguntas frecuentes antes de empezar.",
