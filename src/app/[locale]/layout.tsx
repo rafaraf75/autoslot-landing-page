@@ -120,7 +120,7 @@ export default async function LocaleLayout({
             { value: "en", label: "EN" },
           ]}
         />
-        <main className="pb-10 pt-6 md:pb-14 md:pt-10">{children}</main>
+        <main className="bg-[#cbd4e0] pt-6 md:pt-10 dark:bg-background">{children}</main>
         <SiteFooter
           locale={locale}
           title={tFooter("title")}

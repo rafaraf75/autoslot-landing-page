@@ -23,7 +23,7 @@ export function ThemeToggle({ label }: ThemeToggleProps) {
     <Button
       variant="outline"
       size="icon-sm"
-      className="h-8 w-8 rounded-xl bg-secondary/35 md:h-7 md:w-7"
+      className="h-8 w-8 rounded-xl bg-secondary/35 md:h-7 md:w-7 light:border-slate-400/75 light:bg-slate-200/95 light:text-slate-800 light:hover:bg-slate-300/95"
       onClick={() => setTheme(isDark ? "light" : "dark")}
       aria-label={label}
     >

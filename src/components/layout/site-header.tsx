@@ -32,7 +32,7 @@ export function SiteHeader({
   localeOptions,
 }: SiteHeaderProps) {
   return (
-    <header className="sticky top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur light:border-slate-400/80 light:bg-slate-300/80">
       <div className="autoslot-container flex h-16 items-center justify-between gap-3">
         <Link
           href={`/${locale}`}
@@ -44,31 +44,31 @@ export function SiteHeader({
         <nav className="hidden items-center gap-4 md:flex">
           <Link
             href={`/${locale}#problem`}
-            className="rounded-md px-1 py-0.5 text-xs font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
+            className="rounded-md px-1 py-0.5 text-xs font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 light:text-slate-800 light:hover:text-slate-950"
           >
             {navProblemLabel}
           </Link>
           <Link
             href={`/${locale}#solution-flow`}
-            className="rounded-md px-1 py-0.5 text-xs font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
+            className="rounded-md px-1 py-0.5 text-xs font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 light:text-slate-800 light:hover:text-slate-950"
           >
             {navFlowLabel}
           </Link>
           <Link
             href={`/${locale}#pricing`}
-            className="rounded-md px-1 py-0.5 text-xs font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
+            className="rounded-md px-1 py-0.5 text-xs font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 light:text-slate-800 light:hover:text-slate-950"
           >
             {navPricingLabel}
           </Link>
           <Link
             href={`/${locale}#faq`}
-            className="rounded-md px-1 py-0.5 text-xs font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
+            className="rounded-md px-1 py-0.5 text-xs font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 light:text-slate-800 light:hover:text-slate-950"
           >
             {navFaqLabel}
           </Link>
           <Link
             href={`/${locale}#feedback`}
-            className="rounded-md px-1 py-0.5 text-xs font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
+            className="rounded-md px-1 py-0.5 text-xs font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 light:text-slate-800 light:hover:text-slate-950"
           >
             {navContactLabel}
           </Link>
@@ -97,31 +97,31 @@ export function SiteHeader({
         <nav className="-mx-1 flex gap-1 overflow-x-auto px-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           <Link
             href={`/${locale}#problem`}
-            className="rounded-lg border border-border/70 bg-secondary/25 px-2.5 py-1.5 text-[11px] font-medium text-muted-foreground whitespace-nowrap hover:bg-secondary/45 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
+            className="rounded-lg border border-border/70 bg-secondary/25 px-2.5 py-1.5 text-[11px] font-medium text-muted-foreground whitespace-nowrap hover:bg-secondary/45 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 light:border-slate-400/70 light:bg-slate-200/90 light:text-slate-800 light:hover:bg-slate-300/90 light:hover:text-slate-950"
           >
             {navProblemLabel}
           </Link>
           <Link
             href={`/${locale}#solution-flow`}
-            className="rounded-lg border border-border/70 bg-secondary/25 px-2.5 py-1.5 text-[11px] font-medium text-muted-foreground whitespace-nowrap hover:bg-secondary/45 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
+            className="rounded-lg border border-border/70 bg-secondary/25 px-2.5 py-1.5 text-[11px] font-medium text-muted-foreground whitespace-nowrap hover:bg-secondary/45 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 light:border-slate-400/70 light:bg-slate-200/90 light:text-slate-800 light:hover:bg-slate-300/90 light:hover:text-slate-950"
           >
             {navFlowLabel}
           </Link>
           <Link
             href={`/${locale}#pricing`}
-            className="rounded-lg border border-border/70 bg-secondary/25 px-2.5 py-1.5 text-[11px] font-medium text-muted-foreground whitespace-nowrap hover:bg-secondary/45 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
+            className="rounded-lg border border-border/70 bg-secondary/25 px-2.5 py-1.5 text-[11px] font-medium text-muted-foreground whitespace-nowrap hover:bg-secondary/45 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 light:border-slate-400/70 light:bg-slate-200/90 light:text-slate-800 light:hover:bg-slate-300/90 light:hover:text-slate-950"
           >
             {navPricingLabel}
           </Link>
           <Link
             href={`/${locale}#faq`}
-            className="rounded-lg border border-border/70 bg-secondary/25 px-2.5 py-1.5 text-[11px] font-medium text-muted-foreground whitespace-nowrap hover:bg-secondary/45 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
+            className="rounded-lg border border-border/70 bg-secondary/25 px-2.5 py-1.5 text-[11px] font-medium text-muted-foreground whitespace-nowrap hover:bg-secondary/45 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 light:border-slate-400/70 light:bg-slate-200/90 light:text-slate-800 light:hover:bg-slate-300/90 light:hover:text-slate-950"
           >
             {navFaqLabel}
           </Link>
           <Link
             href={`/${locale}#feedback`}
-            className="rounded-lg border border-border/70 bg-secondary/25 px-2.5 py-1.5 text-[11px] font-medium text-muted-foreground whitespace-nowrap hover:bg-secondary/45 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50"
+            className="rounded-lg border border-border/70 bg-secondary/25 px-2.5 py-1.5 text-[11px] font-medium text-muted-foreground whitespace-nowrap hover:bg-secondary/45 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50 light:border-slate-400/70 light:bg-slate-200/90 light:text-slate-800 light:hover:bg-slate-300/90 light:hover:text-slate-950"
           >
             {navContactLabel}
           </Link>

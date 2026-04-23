@@ -47,7 +47,7 @@ export function LocaleSwitcher({
           <Button
             variant="outline"
             size="icon-sm"
-            className="h-8 w-10 rounded-xl border-border/70 bg-secondary/35 px-0 text-[11px] font-medium tracking-[0.08em] text-foreground/85 uppercase hover:bg-secondary/55 md:h-7"
+            className="h-8 w-10 rounded-xl border-border/70 bg-secondary/35 px-0 text-[11px] font-medium tracking-[0.08em] text-foreground/85 uppercase hover:bg-secondary/55 md:h-7 light:border-slate-400/75 light:bg-slate-200/95 light:text-slate-800 light:hover:bg-slate-300/95"
             aria-label={triggerLabel}
           />
         }
