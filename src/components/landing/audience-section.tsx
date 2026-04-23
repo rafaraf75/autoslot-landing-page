@@ -1,5 +1,3 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-
 type AudienceSectionProps = {
   title: string;
   description: string;
@@ -19,39 +17,43 @@ export function AudienceSection({
 }: AudienceSectionProps) {
   return (
     <section id="audience" className="scroll-mt-28 py-6 md:py-8">
-      <Card className="bg-card/85">
-        <CardHeader className="space-y-2">
-          <CardTitle className="text-2xl md:text-3xl">{title}</CardTitle>
-          <p className="max-w-3xl text-sm text-muted-foreground md:text-base">
+      <div className="space-y-6 md:space-y-7">
+        <header className="mx-auto flex max-w-5xl flex-col items-center space-y-3.5 text-center md:space-y-4">
+          <div aria-hidden="true" className="h-px w-12 bg-border/70" />
+          <h2 className="max-w-[28ch] text-balance text-[2.1rem] font-semibold leading-[1.12] tracking-[-0.02em] md:max-w-[26ch] md:text-[2.35rem] lg:max-w-[28ch] lg:text-[2.55rem]">
+            {title}
+          </h2>
+          <p className="max-w-[58ch] text-[1.08rem] leading-relaxed text-foreground/72 md:text-[1.2rem]">
             {description}
           </p>
-        </CardHeader>
-        <CardContent>
-          <div className="grid gap-3 md:grid-cols-2">
-            <div className="rounded-xl border border-border/70 bg-secondary/20 px-3 py-3">
-              <p className="text-sm font-medium">{forTitle}</p>
-              <ul className="mt-2 space-y-2">
-                {forItems.map((item) => (
-                  <li key={item} className="text-sm text-muted-foreground">
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
+        </header>
 
-            <div className="rounded-xl border border-border/70 bg-secondary/20 px-3 py-3">
-              <p className="text-sm font-medium">{notForTitle}</p>
-              <ul className="mt-2 space-y-2">
-                {notForItems.map((item) => (
-                  <li key={item} className="text-sm text-muted-foreground">
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
+        <div className="mx-auto grid max-w-5xl gap-x-12 gap-y-6 border-t border-border/55 pt-5 md:grid-cols-2">
+          <div>
+            <p className="text-lg font-semibold leading-snug md:text-xl">{forTitle}</p>
+            <ul className="mt-3 space-y-2.5">
+              {forItems.map((item) => (
+                <li key={item} className="flex items-start gap-3 text-sm leading-relaxed text-foreground/72 dark:text-[oklch(0.84_0.01_252/0.82)]">
+                  <span aria-hidden="true" className="mt-[0.55rem] h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/40" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
           </div>
-        </CardContent>
-      </Card>
+
+          <div>
+            <p className="text-lg font-semibold leading-snug md:text-xl">{notForTitle}</p>
+            <ul className="mt-3 space-y-2.5">
+              {notForItems.map((item) => (
+                <li key={item} className="flex items-start gap-3 text-sm leading-relaxed text-foreground/72 dark:text-[oklch(0.84_0.01_252/0.82)]">
+                  <span aria-hidden="true" className="mt-[0.55rem] h-1.5 w-1.5 shrink-0 rounded-full bg-foreground/40" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
