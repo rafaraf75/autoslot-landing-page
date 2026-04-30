@@ -175,7 +175,7 @@
       },
       "item2": {
         "question": "¿Los clientes pueden reservar online?",
-        "answer": "Sí. La reserva online forma parte del roadmap del producto. En piloto ajustamos el enfoque a cada taller."
+        "answer": "Sí. Los clientes ya pueden reservar online mediante un enlace simple o una vista de reserva embebida en la web del taller."
       },
       "item3": {
         "question": "¿Se puede preparar presupuesto antes de la reparación?",
