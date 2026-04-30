@@ -199,7 +199,10 @@ export default async function LocaleHomePage({ params }: LocalePageProps) {
           messageLabel={tFeedback("messageLabel")}
           messagePlaceholder={tFeedback("messagePlaceholder")}
           submitCta={tFeedback("submitCta")}
+          submitCtaLoading={tFeedback("submitCtaLoading")}
           helperNote={tFeedback("helperNote")}
+          successMessage={tFeedback("successMessage")}
+          errorMessage={tFeedback("errorMessage")}
         />
         <FAQSection
           title={tFaq("title")}

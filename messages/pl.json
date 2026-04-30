@@ -157,10 +157,13 @@
     "messageLabel": "Wiadomość (opcjonalnie)",
     "messagePlaceholder": "Co najbardziej chcesz uporządkować w codziennym procesie warsztatu?",
     "submitCta": "Wyślij zgłoszenie",
-    "helperNote": "Na tym etapie to front-only: kliknięcie otworzy aplikację e-mail z uzupełnionym szkicem.",
+    "helperNote": "Po wysłaniu zgłoszenia odpowiemy mailowo i umówimy dalszy krok.",
     "interestTypeDemoDescription": "Zobacz, jak AutoSlot może uporządkować wizyty, wycenę i zlecenia w Twoim warsztacie.",
     "interestTypeWaitlistDescription": "Daj znać, że chcesz wejść do kolejnej fali wdrożeń, gdy otworzymy następne miejsca.",
-    "interestTypeFeedbackDescription": "Opisz potrzeby zespołu i to, co najbardziej warto dopracować przed wdrożeniem."
+    "interestTypeFeedbackDescription": "Opisz potrzeby zespołu i to, co najbardziej warto dopracować przed wdrożeniem.",
+    "submitCtaLoading": "Wysyłanie...",
+    "successMessage": "Zgłoszenie zostało wysłane. Odezwiemy się mailowo.",
+    "errorMessage": "Nie udało się wysłać zgłoszenia. Spróbuj ponownie za chwilę."
   },
   "FAQ": {
     "title": "Najczęstsze pytania przed rozpoczęciem.",

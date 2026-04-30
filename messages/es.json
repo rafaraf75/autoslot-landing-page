@@ -157,10 +157,13 @@
     "messageLabel": "Mensaje (opcional)",
     "messagePlaceholder": "¿Qué parte del flujo del taller quieres ordenar primero?",
     "submitCta": "Enviar solicitud",
-    "helperNote": "Por ahora es front-only: al enviar se abre tu app de correo con un borrador.",
+    "helperNote": "Después de enviar el formulario, responderemos por correo y confirmaremos el siguiente paso.",
     "interestTypeDemoDescription": "Mira cómo AutoSlot puede ordenar citas, presupuestos y órdenes en tu taller.",
     "interestTypeWaitlistDescription": "Déjanos saber que quieres entrar en la siguiente ola de implantaciones cuando abramos más plazas.",
-    "interestTypeFeedbackDescription": "Comparte las necesidades de tu equipo y qué conviene afinar antes del despliegue."
+    "interestTypeFeedbackDescription": "Comparte las necesidades de tu equipo y qué conviene afinar antes del despliegue.",
+    "submitCtaLoading": "Enviando...",
+    "successMessage": "La solicitud se envió correctamente. Te responderemos por correo.",
+    "errorMessage": "No se pudo enviar la solicitud. Inténtalo de nuevo en un momento."
   },
   "FAQ": {
     "title": "Preguntas frecuentes antes de empezar.",

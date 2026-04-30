@@ -157,10 +157,13 @@
     "messageLabel": "Message (optional)",
     "messagePlaceholder": "What do you want to improve first in your workshop flow?",
     "submitCta": "Send request",
-    "helperNote": "Front-only for now: submit opens your email app with a prefilled draft.",
+    "helperNote": "After sending, we will reply by email and confirm the next step.",
     "interestTypeDemoDescription": "See how AutoSlot can structure visits, estimates and repair orders in your workshop.",
     "interestTypeWaitlistDescription": "Let us know you want to join the next wave of onboardings when more spots open up.",
-    "interestTypeFeedbackDescription": "Share your team needs and what should be refined before rollout."
+    "interestTypeFeedbackDescription": "Share your team needs and what should be refined before rollout.",
+    "submitCtaLoading": "Sending...",
+    "successMessage": "Your request was sent. We will reply by email.",
+    "errorMessage": "The request could not be sent. Please try again shortly."
   },
   "FAQ": {
     "title": "Frequently asked questions before contact.",

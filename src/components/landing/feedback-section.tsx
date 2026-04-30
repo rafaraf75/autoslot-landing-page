@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -29,7 +29,10 @@ type FeedbackSectionProps = {
   messageLabel: string;
   messagePlaceholder: string;
   submitCta: string;
+  submitCtaLoading: string;
   helperNote: string;
+  successMessage: string;
+  errorMessage: string;
 };
 
 type InterestType = "demo" | "waitlist" | "feedback";
@@ -57,10 +60,17 @@ export function FeedbackSection({
   messageLabel,
   messagePlaceholder,
   submitCta,
+  submitCtaLoading,
   helperNote,
+  successMessage,
+  errorMessage,
 }: FeedbackSectionProps) {
-  const captureEmail = process.env.NEXT_PUBLIC_FEEDBACK_EMAIL ?? "hello@autoslot.app";
   const [interestType, setInterestType] = useState<InterestType>("demo");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitState, setSubmitState] = useState<{
+    kind: "idle" | "success" | "error";
+    message: string;
+  }>({ kind: "idle", message: "" });
 
   useEffect(() => {
     const interest = new URLSearchParams(window.location.search).get("interest");
@@ -86,6 +96,46 @@ export function FeedbackSection({
       description: interestTypeFeedbackDescription,
     },
   ];
+
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setIsSubmitting(true);
+    setSubmitState({ kind: "idle", message: "" });
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+    const payload = {
+      workshopName: String(formData.get("workshopName") ?? ""),
+      contactName: String(formData.get("contactName") ?? ""),
+      email: String(formData.get("email") ?? ""),
+      marketOrLanguage: String(formData.get("marketOrLanguage") ?? ""),
+      interestType,
+      message: String(formData.get("message") ?? ""),
+      companyWebsite: String(formData.get("companyWebsite") ?? ""),
+    };
+
+    try {
+      const response = await fetch("/api/feedback", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error("Feedback request failed");
+      }
+
+      form.reset();
+      setInterestType("demo");
+      setSubmitState({ kind: "success", message: successMessage });
+    } catch {
+      setSubmitState({ kind: "error", message: errorMessage });
+    } finally {
+      setIsSubmitting(false);
+    }
+  }
 
   return (
     <section id="feedback" className="scroll-mt-28 py-10 md:py-14">
@@ -139,12 +189,7 @@ export function FeedbackSection({
           className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(148,163,184,0.18),transparent_34%)] dark:bg-[radial-gradient(circle_at_top_left,rgba(148,163,184,0.10),transparent_34%)]"
         />
 
-        <form
-          action={`mailto:${captureEmail}`}
-          method="post"
-          encType="text/plain"
-          className="relative"
-        >
+        <form onSubmit={handleSubmit} className="relative">
           <div className="flex flex-col gap-4 border-b border-slate-200/80 px-6 py-6 md:flex-row md:items-end md:justify-between md:px-8 dark:border-white/10">
             <div>
               <p className="text-sm font-medium tracking-[0.08em] text-slate-600 uppercase dark:text-slate-400">
@@ -163,6 +208,14 @@ export function FeedbackSection({
           </div>
 
           <div className="grid gap-6 px-6 py-6 md:px-8 md:py-8">
+            <input
+              type="text"
+              name="companyWebsite"
+              tabIndex={-1}
+              autoComplete="off"
+              className="hidden"
+              aria-hidden="true"
+            />
             <div className="grid gap-4 md:grid-cols-2">
               <div className="space-y-2">
                 <label htmlFor="workshopName" className="text-sm text-muted-foreground">
@@ -173,6 +226,7 @@ export function FeedbackSection({
                   name="workshopName"
                   placeholder={workshopNamePlaceholder}
                   autoComplete="organization"
+                  required
                   className="h-12 rounded-2xl border-slate-300/80 bg-white/60 dark:border-[oklch(0.54_0.03_232/0.44)] dark:bg-[oklch(0.25_0.012_250/0.72)]"
                 />
               </div>
@@ -186,6 +240,7 @@ export function FeedbackSection({
                   name="contactName"
                   placeholder={contactNamePlaceholder}
                   autoComplete="name"
+                  required
                   className="h-12 rounded-2xl border-slate-300/80 bg-white/60 dark:border-[oklch(0.54_0.03_232/0.44)] dark:bg-[oklch(0.25_0.012_250/0.72)]"
                 />
               </div>
@@ -200,6 +255,7 @@ export function FeedbackSection({
                   type="email"
                   placeholder={emailPlaceholder}
                   autoComplete="email"
+                  required
                   className="h-12 rounded-2xl border-slate-300/80 bg-white/60 dark:border-[oklch(0.54_0.03_232/0.44)] dark:bg-[oklch(0.25_0.012_250/0.72)]"
                 />
               </div>
@@ -251,11 +307,27 @@ export function FeedbackSection({
           </div>
 
           <div className="flex flex-col gap-4 border-t border-slate-200/80 px-6 py-5 md:flex-row md:items-center md:justify-between md:px-8 dark:border-white/10">
-            <p className="max-w-3xl text-sm leading-relaxed text-muted-foreground">
-              {helperNote}
-            </p>
-            <Button type="submit" size="lg" className="self-start md:self-auto">
-              {submitCta}
+            <div className="max-w-3xl space-y-2">
+              <p className="text-sm leading-relaxed text-muted-foreground">{helperNote}</p>
+              {submitState.kind !== "idle" ? (
+                <p
+                  className={`text-sm ${
+                    submitState.kind === "success"
+                      ? "text-emerald-600 dark:text-emerald-400"
+                      : "text-rose-600 dark:text-rose-400"
+                  }`}
+                >
+                  {submitState.message}
+                </p>
+              ) : null}
+            </div>
+            <Button
+              type="submit"
+              size="lg"
+              disabled={isSubmitting}
+              className="self-start md:self-auto"
+            >
+              {isSubmitting ? submitCtaLoading : submitCta}
             </Button>
           </div>
         </form>
