@@ -43,7 +43,11 @@
     "painPointStatus": "Estado de las reparaciones poco claro para el equipo.",
     "painPointCommunication": "Notas, mensajes y llamadas repartidos en varios canales.",
     "painPointEstimates": "Presupuestos sin un paso claro antes de aprobar la reparación.",
-    "painPointAdmin": "Demasiada carga administrativa antes de facturar."
+    "painPointAdmin": "Demasiada carga administrativa antes de facturar.",
+    "previewOpenLabel": "Abrir vista ampliada del calendario de AutoSlot",
+    "previewImageAlt": "Vista previa del calendario de AutoSlot para un taller",
+    "previewCloseLabel": "Cerrar vista previa del calendario",
+    "previewHintLabel": "Haz clic para ampliar"
   },
   "SolutionFlow": {
     "title": "Un flujo claro desde la visita hasta la factura.",

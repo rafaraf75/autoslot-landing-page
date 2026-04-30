@@ -43,7 +43,11 @@
     "painPointStatus": "Niejasny status napraw dla zespołu i biura.",
     "painPointCommunication": "Notatki, telefony i wiadomości rozproszone po różnych miejscach.",
     "painPointEstimates": "Brak czytelnego etapu wyceny przed decyzją o naprawie.",
-    "painPointAdmin": "Za dużo pracy administracyjnej zanim wystawisz fakturę."
+    "painPointAdmin": "Za dużo pracy administracyjnej zanim wystawisz fakturę.",
+    "previewOpenLabel": "Powiększ podgląd kalendarza AutoSlot",
+    "previewImageAlt": "Podgląd kalendarza AutoSlot dla warsztatu",
+    "previewCloseLabel": "Zamknij podgląd kalendarza",
+    "previewHintLabel": "Kliknij, aby powiększyć"
   },
   "SolutionFlow": {
     "title": "Jasny proces od wizyty klienta do faktury.",

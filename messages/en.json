@@ -43,7 +43,11 @@
     "painPointStatus": "Unclear repair status across the team.",
     "painPointCommunication": "Notes, calls and messages spread across different channels.",
     "painPointEstimates": "No clear estimate step before repair approval.",
-    "painPointAdmin": "Too much admin overhead before invoicing."
+    "painPointAdmin": "Too much admin overhead before invoicing.",
+    "previewOpenLabel": "Open larger AutoSlot calendar preview",
+    "previewImageAlt": "AutoSlot calendar preview for a workshop",
+    "previewCloseLabel": "Close calendar preview",
+    "previewHintLabel": "Click to enlarge"
   },
   "SolutionFlow": {
     "title": "A clear flow from visit to final invoice.",

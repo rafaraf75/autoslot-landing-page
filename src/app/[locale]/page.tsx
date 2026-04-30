@@ -83,6 +83,10 @@ export default async function LocaleHomePage({ params }: LocalePageProps) {
           painPointCommunication={tProblem("painPointCommunication")}
           painPointEstimates={tProblem("painPointEstimates")}
           painPointAdmin={tProblem("painPointAdmin")}
+          previewOpenLabel={tProblem("previewOpenLabel")}
+          previewImageAlt={tProblem("previewImageAlt")}
+          previewCloseLabel={tProblem("previewCloseLabel")}
+          previewHintLabel={tProblem("previewHintLabel")}
         />
         <SolutionFlowSection
           title={tFlow("title")}
