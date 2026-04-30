@@ -175,7 +175,7 @@
       },
       "item2": {
         "question": "Can customers book online?",
-        "answer": "Yes. Customers can already book online through a simple link or an embedded booking view on the workshop website."
+        "answer": "Yes. Each workshop can have its own public online booking link. The link can be added to Google Maps, social media or the workshop website, and bookings go directly into the AutoSlot calendar."
       },
       "item3": {
         "question": "Can I prepare an estimate before repair starts?",

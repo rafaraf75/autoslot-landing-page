@@ -175,7 +175,7 @@
       },
       "item2": {
         "question": "Czy klienci mogą rezerwować online?",
-        "answer": "Tak. Klienci mogą już rezerwować online przez prosty link lub osadzony widok na stronie warsztatu."
+        "answer": "Tak. Każdy warsztat może mieć własny publiczny link do rezerwacji online. Link można dodać do Google Maps, social mediów lub strony warsztatu, a rezerwacje trafiają bezpośrednio do kalendarza AutoSlot."
       },
       "item3": {
         "question": "Czy można zrobić wycenę przed naprawą?",

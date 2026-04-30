@@ -175,7 +175,7 @@
       },
       "item2": {
         "question": "¿Los clientes pueden reservar online?",
-        "answer": "Sí. Los clientes ya pueden reservar online mediante un enlace simple o una vista de reserva embebida en la web del taller."
+        "answer": "Sí. Cada taller puede tener su propio enlace público de reserva online. El enlace se puede añadir a Google Maps, redes sociales o la web del taller, y las reservas entran directamente en el calendario de AutoSlot."
       },
       "item3": {
         "question": "¿Se puede preparar presupuesto antes de la reparación?",
