@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { TrackedLink } from "@/components/common/tracked-link";
 
 type SiteFooterProps = {
   locale: string;
@@ -43,31 +43,33 @@ export function SiteFooter({
               {quickLinksLabel}
             </p>
             <div className="flex flex-wrap gap-x-3 gap-y-1 text-xs">
-              <Link href={`/${locale}#problem`} className="text-muted-foreground hover:text-foreground">
+              <TrackedLink href={`/${locale}#problem`} className="text-muted-foreground hover:text-foreground">
                 {problemLabel}
-              </Link>
-              <Link href={`/${locale}#solution-flow`} className="text-muted-foreground hover:text-foreground">
+              </TrackedLink>
+              <TrackedLink href={`/${locale}#solution-flow`} className="text-muted-foreground hover:text-foreground">
                 {flowLabel}
-              </Link>
-              <Link href={`/${locale}#pricing`} className="text-muted-foreground hover:text-foreground">
+              </TrackedLink>
+              <TrackedLink href={`/${locale}#pricing`} className="text-muted-foreground hover:text-foreground">
                 {pricingLabel}
-              </Link>
-              <Link href={`/${locale}#faq`} className="text-muted-foreground hover:text-foreground">
+              </TrackedLink>
+              <TrackedLink href={`/${locale}#faq`} className="text-muted-foreground hover:text-foreground">
                 {faqLabel}
-              </Link>
-              <Link href={`/${locale}#feedback`} className="text-muted-foreground hover:text-foreground">
+              </TrackedLink>
+              <TrackedLink href={`/${locale}#feedback`} className="text-muted-foreground hover:text-foreground">
                 {contactLabel}
-              </Link>
+              </TrackedLink>
             </div>
           </div>
 
           <div className="space-y-2 md:text-right">
-            <Link
+            <TrackedLink
               href={`/${locale}?interest=demo#feedback`}
+              eventName="cta_demo_click"
+              eventData={{ section: "footer" }}
               className="inline-flex rounded-lg border border-border/70 bg-secondary/30 px-3 py-1.5 text-xs font-medium text-foreground transition-colors hover:bg-secondary/45"
             >
               {ctaLabel}
-            </Link>
+            </TrackedLink>
             <div className="flex gap-3 text-xs text-muted-foreground md:justify-end">
               <span>{legalLabel}</span>
               <span>{privacyLabel}</span>

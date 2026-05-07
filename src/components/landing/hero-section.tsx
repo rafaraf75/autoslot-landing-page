@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { TrackedLink } from "@/components/common/tracked-link";
 import { buttonVariants } from "@/components/ui/button";
 
 type HeroSectionProps = {
@@ -49,24 +49,30 @@ export function HeroSection({
             </p>
           </div>
           <div className="hero-cta-row flex flex-wrap items-center gap-3">
-            <Link
+            <TrackedLink
               href="?interest=demo#feedback"
+              eventName="cta_demo_click"
+              eventData={{ section: "hero" }}
               className={buttonVariants({ className: "hero-primary-cta" })}
             >
               {ctaPrimary}
-            </Link>
-            <Link
+            </TrackedLink>
+            <TrackedLink
               href="?interest=waitlist#feedback"
+              eventName="cta_waitlist_click"
+              eventData={{ section: "hero" }}
               className={buttonVariants({ variant: "outline" })}
             >
               {ctaSecondary}
-            </Link>
-            <Link
+            </TrackedLink>
+            <TrackedLink
               href="?interest=feedback#feedback"
+              eventName="cta_feedback_click"
+              eventData={{ section: "hero" }}
               className="hero-tertiary-link inline-flex h-10 items-center rounded-md px-1.5 text-sm font-medium"
             >
               {ctaTertiary}
-            </Link>
+            </TrackedLink>
           </div>
         </div>
 

@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
+import { TrackedLink } from "@/components/common/tracked-link";
 import { buttonVariants } from "@/components/ui/button";
 
 type PricingSectionProps = {
@@ -79,15 +79,22 @@ export function PricingSection({
             </div>
 
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link href="?interest=demo#feedback" className={buttonVariants({ size: "lg" })}>
+              <TrackedLink
+                href="?interest=demo#feedback"
+                eventName="cta_demo_click"
+                eventData={{ section: "pricing" }}
+                className={buttonVariants({ size: "lg" })}
+              >
                 {ctaPrimary}
-              </Link>
-              <Link
+              </TrackedLink>
+              <TrackedLink
                 href="?interest=waitlist#feedback"
+                eventName="cta_waitlist_click"
+                eventData={{ section: "pricing" }}
                 className={buttonVariants({ variant: "outline", size: "lg" })}
               >
                 {ctaSecondary}
-              </Link>
+              </TrackedLink>
             </div>
           </div>
 
