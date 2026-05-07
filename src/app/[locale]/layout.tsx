@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
+import Script from "next/script";
 import type { ReactNode } from "react";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
@@ -104,6 +105,11 @@ export default async function LocaleLayout({
   return (
     <NextIntlClientProvider>
       <div className="min-h-screen">
+        <Script
+          src="https://cloud.umami.is/script.js"
+          data-website-id="b96a776d-1bb5-4b98-9e0a-4e3d471fb9bb"
+          strategy="afterInteractive"
+        />
         <SiteHeader
           locale={locale}
           localeLabel={tHeader("language")}
