@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { trackUmamiEvent } from "@/lib/umami";
 
 type FeedbackSectionProps = {
   title: string;
@@ -128,6 +129,10 @@ export function FeedbackSection({
       }
 
       form.reset();
+      trackUmamiEvent("contact_form_submit", {
+        section: "contact",
+        interest_type: interestType,
+      });
       setInterestType("demo");
       setSubmitState({ kind: "success", message: successMessage });
     } catch {
@@ -165,7 +170,17 @@ export function FeedbackSection({
             <button
               key={card.value}
               type="button"
-              onClick={() => setInterestType(card.value)}
+              onClick={() => {
+                setInterestType(card.value);
+                trackUmamiEvent(
+                  card.value === "demo"
+                    ? "cta_demo_click"
+                    : card.value === "waitlist"
+                      ? "cta_waitlist_click"
+                      : "cta_feedback_click",
+                  { section: "contact" },
+                );
+              }}
               className={`flex h-full appearance-none flex-col items-start justify-start rounded-[1.5rem] border p-5 text-left transition-colors ${
                 isActive
                   ? "border-slate-400/70 bg-slate-100/85 shadow-[0_18px_40px_rgba(51,65,85,0.12)] dark:border-[oklch(0.54_0.03_232/0.72)] dark:bg-[oklch(0.28_0.018_250/0.72)] dark:shadow-[inset_0_1px_0_oklch(1_0_0/0.09),0_16px_28px_-24px_oklch(0.08_0.02_250/0.62)]"
