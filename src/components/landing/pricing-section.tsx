@@ -4,6 +4,7 @@ import { buttonVariants } from "@/components/ui/button";
 
 type PricingSectionProps = {
   title: string;
+  titleAccent?: string;
   description: string;
   badge: string;
   cardTitle: string;
@@ -20,6 +21,7 @@ type PricingSectionProps = {
 
 export function PricingSection({
   title,
+  titleAccent,
   description,
   badge,
   cardTitle,
@@ -33,19 +35,30 @@ export function PricingSection({
   noteTitle,
   noteDescription,
 }: PricingSectionProps) {
+  const accentIndex = titleAccent ? title.indexOf(titleAccent) : -1;
+  const titleBeforeAccent = accentIndex >= 0 ? title.slice(0, accentIndex) : title;
+  const titleAfterAccent =
+    accentIndex >= 0 && titleAccent
+      ? title.slice(accentIndex + titleAccent.length)
+      : "";
+
   return (
     <section id="pricing" className="scroll-mt-28 py-10 md:py-14">
       <div className="mx-auto max-w-5xl text-center">
-        <div className="mx-auto mb-8 h-px w-20 bg-slate-300/80 dark:bg-white/10" />
+        <div className="mx-auto mb-8 h-px w-20 bg-primary/28 dark:bg-white/10" />
         <h2 className="text-3xl font-semibold tracking-tight text-foreground md:text-5xl">
-          {title}
+          {titleBeforeAccent}
+          {accentIndex >= 0 && titleAccent ? (
+            <span className="text-primary">{titleAccent}</span>
+          ) : null}
+          {titleAfterAccent}
         </h2>
         <p className="mx-auto mt-5 max-w-4xl text-lg leading-relaxed text-muted-foreground md:text-xl">
           {description}
         </p>
       </div>
 
-      <div className="relative mx-auto mt-10 max-w-6xl overflow-hidden rounded-[2rem] border border-slate-300/80 bg-slate-100/80 shadow-[0_30px_80px_rgba(51,65,85,0.16)] dark:border-white/10 dark:bg-white/[0.045] dark:shadow-[0_30px_90px_rgba(0,0,0,0.38)]">
+      <div className="relative mx-auto mt-10 max-w-6xl overflow-hidden rounded-[2rem] border border-[#bccbdd]/82 bg-[#edf2f9]/84 shadow-[0_32px_82px_rgba(62,78,110,0.18)] dark:border-white/10 dark:bg-white/[0.045] dark:shadow-[0_30px_90px_rgba(0,0,0,0.38)]">
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(148,163,184,0.18),transparent_36%)] dark:bg-[radial-gradient(circle_at_top_left,rgba(148,163,184,0.10),transparent_36%)]"
@@ -56,7 +69,7 @@ export function PricingSection({
             <div>
               <Badge
                 variant="outline"
-                className="rounded-full border-slate-300/80 bg-white/65 px-4 py-1 text-[0.7rem] tracking-[0.16em] text-slate-700 uppercase dark:border-[oklch(0.54_0.03_232/0.52)] dark:bg-[oklch(0.28_0.018_250/0.38)] dark:text-[oklch(0.78_0.02_238/0.92)]"
+                className="rounded-full border-[#bccadb]/84 bg-[#f7f9fd]/88 px-4 py-1 text-[0.7rem] tracking-[0.16em] text-slate-700 uppercase dark:border-[oklch(0.54_0.03_232/0.52)] dark:bg-[oklch(0.28_0.018_250/0.38)] dark:text-[oklch(0.78_0.02_238/0.92)]"
               >
                 {badge}
               </Badge>
@@ -68,7 +81,7 @@ export function PricingSection({
                 {cardDescription}
               </p>
 
-              <div className="mt-8 rounded-[1.6rem] border border-slate-300/80 bg-white/65 p-6 shadow-[0_20px_45px_rgba(51,65,85,0.10)] dark:border-[oklch(0.54_0.03_232/0.62)] dark:bg-[oklch(0.28_0.018_250/0.64)] dark:shadow-[inset_0_1px_0_oklch(1_0_0/0.09),0_16px_28px_-24px_oklch(0.08_0.02_250/0.62)]">
+              <div className="mt-8 rounded-[1.6rem] border border-[#b8c8de]/84 bg-[#e1e9f4]/94 p-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.46),0_22px_40px_-24px_rgba(66,82,114,0.24)] dark:border-[oklch(0.54_0.03_232/0.62)] dark:bg-[oklch(0.28_0.018_250/0.64)] dark:shadow-[inset_0_1px_0_oklch(1_0_0/0.09),0_16px_28px_-24px_oklch(0.08_0.02_250/0.62)]">
                 <p className="text-4xl font-semibold tracking-tight text-foreground md:text-5xl">
                   {pricingModel}
                 </p>
@@ -98,7 +111,7 @@ export function PricingSection({
             </div>
           </div>
 
-          <div className="rounded-[1.6rem] border border-slate-300/80 bg-white/58 p-6 shadow-[0_22px_52px_rgba(51,65,85,0.08)] dark:border-[oklch(0.54_0.03_232/0.62)] dark:bg-[oklch(0.28_0.018_250/0.64)] dark:shadow-[inset_0_1px_0_oklch(1_0_0/0.09),0_16px_28px_-24px_oklch(0.08_0.02_250/0.62)]">
+          <div className="rounded-[1.6rem] border border-[#b8c8de]/84 bg-[#e1e9f4]/92 p-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.44),0_22px_44px_-24px_rgba(66,82,114,0.22)] dark:border-[oklch(0.54_0.03_232/0.62)] dark:bg-[oklch(0.28_0.018_250/0.64)] dark:shadow-[inset_0_1px_0_oklch(1_0_0/0.09),0_16px_28px_-24px_oklch(0.08_0.02_250/0.62)]">
             <p className="text-sm font-medium tracking-[0.08em] text-slate-600 uppercase dark:text-slate-400">
               {includedTitle}
             </p>
@@ -109,7 +122,7 @@ export function PricingSection({
                   key={item}
                   className={`flex items-start gap-4 ${
                     index !== 0
-                      ? "border-t border-slate-200/80 pt-4 dark:border-white/10"
+                      ? "border-t border-[#ccd6e6]/88 pt-4 dark:border-white/10"
                       : ""
                   }`}
                 >

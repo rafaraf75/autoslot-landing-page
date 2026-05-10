@@ -32,9 +32,13 @@
     "visualTitle": "Realny proces warsztatu",
     "visualDescription": "Od pierwszego kontaktu klienta do finalnej faktury, bez urwanych etapów.",
     "flowVisit": "Wizyta / termin",
+    "flowVisitDescription": "Przyjęcie auta i termin wizyty",
     "flowEstimate": "Wycena",
+    "flowEstimateDescription": "Akceptacja zakresu przed pracą",
     "flowWorkOrder": "Zlecenie naprawy",
-    "flowInvoice": "Faktura"
+    "flowWorkOrderDescription": "Jasne zadania dla zespołu",
+    "flowInvoice": "Faktura",
+    "flowInvoiceDescription": "Domknięcie pracy i dokumenty"
   },
   "Problem": {
     "title": "Jeśli prowadzisz warsztat na notatkach i wiadomościach, to brzmi znajomo.",
@@ -51,6 +55,7 @@
   },
   "SolutionFlow": {
     "title": "Jasny proces od wizyty klienta do faktury.",
+    "titleAccent": "wizyty klienta",
     "description": "AutoSlot porządkuje pracę w 4 połączonych etapach, dzięki czemu zespół zawsze wie, co jest kolejne.",
     "visitTitle": "Wizyta / termin",
     "visitDescription": "Zapisz przyjęcie auta i powód wizyty klienta.",
@@ -63,6 +68,7 @@
   },
   "Benefits": {
     "title": "Praktyczne korzyści dla codziennej pracy warsztatu.",
+    "titleAccent": "codziennej pracy",
     "description": "AutoSlot nie dokłada zbędnych warstw. Porządkuje procesy, które i tak wykonujesz każdego dnia.",
     "items": {
       "lessChaos": {
@@ -122,6 +128,7 @@
   },
   "Pricing": {
     "title": "Prosty model early access z pierwszymi warsztatami.",
+    "titleAccent": "early access",
     "description": "Nie publikujemy cennika enterprise. Early access startuje od 200 PLN dla warsztatów do 5 stanowisk, a szerszy zakres ustalamy podczas demo.",
     "badge": "Early access",
     "cardTitle": "Pakiet pilotowy AutoSlot",

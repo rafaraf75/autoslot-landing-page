@@ -55,7 +55,7 @@ export default async function LocaleHomePage({ params }: LocalePageProps) {
         aria-hidden="true"
         className="landing-page-fade pointer-events-none absolute inset-x-0 top-0 h-[900px] md:h-[1060px]"
       />
-      <div className="autoslot-container relative z-10 pt-6 md:pt-10">
+      <div className="autoslot-container relative z-10">
         <Script
           id="faq-json-ld"
           type="application/ld+json"
@@ -71,9 +71,13 @@ export default async function LocaleHomePage({ params }: LocalePageProps) {
           visualTitle={tHero("visualTitle")}
           visualDescription={tHero("visualDescription")}
           flowVisit={tHero("flowVisit")}
+          flowVisitDescription={tHero("flowVisitDescription")}
           flowEstimate={tHero("flowEstimate")}
+          flowEstimateDescription={tHero("flowEstimateDescription")}
           flowWorkOrder={tHero("flowWorkOrder")}
+          flowWorkOrderDescription={tHero("flowWorkOrderDescription")}
           flowInvoice={tHero("flowInvoice")}
+          flowInvoiceDescription={tHero("flowInvoiceDescription")}
         />
         <ProblemSection
           title={tProblem("title")}
@@ -90,6 +94,7 @@ export default async function LocaleHomePage({ params }: LocalePageProps) {
         />
         <SolutionFlowSection
           title={tFlow("title")}
+          titleAccent={tFlow("titleAccent")}
           description={tFlow("description")}
           visitTitle={tFlow("visitTitle")}
           visitDescription={tFlow("visitDescription")}
@@ -102,6 +107,7 @@ export default async function LocaleHomePage({ params }: LocalePageProps) {
         />
         <BenefitsSection
           title={tBenefits("title")}
+          titleAccent={tBenefits("titleAccent")}
           description={tBenefits("description")}
           items={[
             {
@@ -161,6 +167,7 @@ export default async function LocaleHomePage({ params }: LocalePageProps) {
         />
         <PricingSection
           title={tPricing("title")}
+          titleAccent={tPricing("titleAccent")}
           description={tPricing("description")}
           badge={tPricing("badge")}
           cardTitle={tPricing("cardTitle")}

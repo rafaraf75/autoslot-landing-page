@@ -32,9 +32,13 @@
     "visualTitle": "Flujo real del taller",
     "visualDescription": "Del primer contacto del cliente hasta la factura final, sin pasos sueltos.",
     "flowVisit": "Visita / cita",
+    "flowVisitDescription": "Recepción del coche y cita",
     "flowEstimate": "Presupuesto",
+    "flowEstimateDescription": "Aprobación antes de empezar",
     "flowWorkOrder": "Orden de reparación",
-    "flowInvoice": "Factura"
+    "flowWorkOrderDescription": "Tareas claras para el equipo",
+    "flowInvoice": "Factura",
+    "flowInvoiceDescription": "Cierre del trabajo y documentos"
   },
   "Problem": {
     "title": "Si hoy llevas el taller con notas sueltas, esto te sonará familiar.",
@@ -51,6 +55,7 @@
   },
   "SolutionFlow": {
     "title": "Un flujo claro desde la visita hasta la factura.",
+    "titleAccent": "la factura",
     "description": "AutoSlot organiza el trabajo en 4 pasos conectados, para que el equipo sepa qué sigue en cada orden.",
     "visitTitle": "Visita / cita",
     "visitDescription": "Registra la entrada del cliente y el motivo de la reparación.",
@@ -63,6 +68,7 @@
   },
   "Benefits": {
     "title": "Beneficios reales para el trabajo diario del taller.",
+    "titleAccent": "trabajo diario",
     "description": "AutoSlot no añade ruido: ordena procesos que ya haces cada día, con menos fricción entre recepción, mecánicos y cliente.",
     "items": {
       "lessChaos": {
@@ -122,6 +128,7 @@
   },
   "Pricing": {
     "title": "Modelo simple para early access con los primeros talleres.",
+    "titleAccent": "early access",
     "description": "No mostramos una tabla enterprise. El early access empieza desde 49 EUR para talleres de hasta 5 puestos / elevadores y ajustamos el alcance en la demo.",
     "badge": "Early access",
     "cardTitle": "Plan piloto AutoSlot",

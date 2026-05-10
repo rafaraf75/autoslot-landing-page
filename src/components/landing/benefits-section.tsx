@@ -5,22 +5,35 @@ type BenefitItem = {
 
 type BenefitsSectionProps = {
   title: string;
+  titleAccent?: string;
   description: string;
   items: BenefitItem[];
 };
 
 export function BenefitsSection({
   title,
+  titleAccent,
   description,
   items,
 }: BenefitsSectionProps) {
+  const accentIndex = titleAccent ? title.indexOf(titleAccent) : -1;
+  const titleBeforeAccent = accentIndex >= 0 ? title.slice(0, accentIndex) : title;
+  const titleAfterAccent =
+    accentIndex >= 0 && titleAccent
+      ? title.slice(accentIndex + titleAccent.length)
+      : "";
+
   return (
     <section id="benefits" className="scroll-mt-28 py-6 md:py-8">
       <div className="space-y-6 md:space-y-7">
         <header className="mx-auto flex max-w-4xl flex-col items-center space-y-3 text-center">
-          <div aria-hidden="true" className="h-px w-12 bg-border/70" />
+          <div aria-hidden="true" className="h-px w-12 bg-primary/45" />
           <h2 className="max-w-[26ch] text-balance text-3xl font-semibold leading-[1.12] tracking-[-0.02em] md:text-[2.35rem]">
-            {title}
+            {titleBeforeAccent}
+            {accentIndex >= 0 && titleAccent ? (
+              <span className="text-primary">{titleAccent}</span>
+            ) : null}
+            {titleAfterAccent}
           </h2>
           <p className="max-w-[58ch] text-[1.05rem] leading-relaxed text-foreground/70 md:text-[1.15rem]">
             {description}
@@ -30,7 +43,7 @@ export function BenefitsSection({
           {items.map((item) => (
             <div
               key={item.title}
-              className="rounded-xl border border-slate-400/45 bg-slate-200/72 px-4 py-4 shadow-[inset_0_1px_0_hsl(var(--background)/0.36),0_16px_30px_-22px_hsl(var(--foreground)/0.42)] backdrop-blur-[8px] dark:border-[oklch(0.54_0.03_232/0.62)] dark:bg-[oklch(0.28_0.018_250/0.64)] dark:shadow-[inset_0_1px_0_oklch(1_0_0/0.09),0_16px_28px_-24px_oklch(0.08_0.02_250/0.62)]"
+              className="rounded-xl border border-[#b8c8de]/82 bg-[#dfe8f4]/90 px-4 py-4 shadow-[inset_0_1px_0_hsl(var(--background)/0.38),0_18px_30px_-20px_rgba(66,82,114,0.22)] backdrop-blur-[8px] dark:border-[oklch(0.54_0.03_232/0.62)] dark:bg-[oklch(0.28_0.018_250/0.64)] dark:shadow-[inset_0_1px_0_oklch(1_0_0/0.09),0_16px_28px_-24px_oklch(0.08_0.02_250/0.62)]"
             >
               <p className="text-base font-semibold leading-snug">{item.title}</p>
               <p className="mt-2 text-sm leading-relaxed text-foreground/70 dark:text-[oklch(0.84_0.01_252/0.82)]">

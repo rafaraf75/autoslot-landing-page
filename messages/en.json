@@ -32,9 +32,13 @@
     "visualTitle": "Real workshop flow",
     "visualDescription": "From the first customer touchpoint to the final invoice, without disconnected steps.",
     "flowVisit": "Visit / appointment",
+    "flowVisitDescription": "Intake and appointment scheduling",
     "flowEstimate": "Estimate",
+    "flowEstimateDescription": "Approval before work starts",
     "flowWorkOrder": "Repair order",
-    "flowInvoice": "Invoice"
+    "flowWorkOrderDescription": "Clear tasks for the workshop team",
+    "flowInvoice": "Invoice",
+    "flowInvoiceDescription": "Closing work and documents"
   },
   "Problem": {
     "title": "If your workshop still runs on scattered notes and calls, this will feel familiar.",
@@ -51,6 +55,7 @@
   },
   "SolutionFlow": {
     "title": "A clear flow from visit to final invoice.",
+    "titleAccent": "final invoice",
     "description": "AutoSlot structures daily operations in 4 connected steps, so the team always knows what comes next.",
     "visitTitle": "Visit / appointment",
     "visitDescription": "Capture customer intake and repair context at the first touchpoint.",
@@ -63,6 +68,7 @@
   },
   "Benefits": {
     "title": "Practical benefits for everyday workshop operations.",
+    "titleAccent": "everyday workshop operations",
     "description": "AutoSlot keeps things simple: it organizes the process your team already runs with less friction between front desk, technicians and customers.",
     "items": {
       "lessChaos": {
@@ -122,6 +128,7 @@
   },
   "Pricing": {
     "title": "Simple early-access pricing for first partner garages.",
+    "titleAccent": "early-access",
     "description": "This is not an enterprise price table. Early-access rollout starts from 49 EUR for up to 5 bays / workstations, then scope is confirmed during demo.",
     "badge": "Early access",
     "cardTitle": "AutoSlot pilot package",
